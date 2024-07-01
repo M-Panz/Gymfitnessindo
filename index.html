@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gymfitnessindo</title>
+    <link rel="stylesheet" href="files/css/tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="font-montserrat">
+    <header>
+        <nav class="flex justify-between items-center px-[104px] pt-[40px] pb-[32px] pl-[104px] pr-[94px] bg-[#202128] text-white">
+            <div class="flex items-center content-center gap-x-[35px] bg-green-500">
+                <button type="button">
+                    <img src="files/svg/icon1.svg" alt="icon_burger" class="w-full h-full object-cover">
+                </button>
+                <div class="relative top-1 flex items-center content-center">
+                    <img src="files/svg/logo_gym.svg" alt="logo_gym" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="flex gap-x-5 bg-transparent bg-blue-500">
+                <button type="button" class="flex pl-6 pr-4 py-[18px]">
+                    <p class="text-base leading-[120%] -tracking-[0.02rem] max-w-[102px]">All Category</p>
+                    <div class="grid place-content-center w-5 h-5">
+                        <img src="files/svg/arrow_down.svg" alt="icon arrow_down">
+                    </div>
+                </button>
+                <div class="relative flex items-center content-center">
+                    <input type="text" class="text-base leading-[120%] -tracking-[0.02rem] max-w-[216px] bg-transparent border-transparent px-4 w-full" placeholder="Search fitness equipment" >
+                    <div>
+                        <img src="files/svg/Search.svg" alt="icon_search">
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-x-10 bg-red-500">
+                <button type="button">
+                    <img src="files/svg/keranjang.svg" alt="icon_keranjang" class="w-full h-full object-cover">
+                </button>
+                <button type="button" class="flex gap-x-4">
+                    <div>
+                        <img src="files/svg/user.svg" alt="icon_user" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-base leading-[120%] -tracking-[0.02rem]">Sign In</p>
+                    
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        function convertLetterSpacing(fontSizePx, letterSpacingPercent) {
+            const letterSpacingPx = (letterSpacingPercent / 100) * fontSizePx;
+            const letterSpacingRem = letterSpacingPx / 16;
+            console.log(letterSpacingRem + 'rem');
+            return letterSpacingRem;
+        }
+    </script>
+    
+</body>
+</html>
