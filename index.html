@@ -4,61 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gymfitnessindo</title>
+    <link rel="icon" type="image/x-icon" href="files/favicon.ico">
     <link rel="stylesheet" href="files/css/tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="font-montserrat">
+<body class="font-montserrat text-white bg-[#131313]">
     <header>
-        <nav class="flex justify-between items-center px-[104px] pt-[40px] pb-[32px] pl-[104px] pr-[94px] bg-[#202128] text-white">
-            <div class="flex items-center content-center gap-x-[35px] bg-green-500">
-                <button type="button">
+        <nav class="grid grid-cols-7 items-center px-[104px] py-6 pl-[104px] pr-[94px] bg-[#202128] text-white">
+            <div class="flex col-span-2 items-center content-center gap-x-[35px] h-full">
+                <button type="button" class="grid place-content-center w-5 h-5">
                     <img src="files/svg/icon1.svg" alt="icon_burger" class="w-full h-full object-cover">
                 </button>
-                <div class="relative top-1 flex items-center content-center">
+                <a href="/" class="relative top-1 flex items-center content-center">
                     <img src="files/svg/logo_gym.svg" alt="logo_gym" class="w-full h-full object-cover">
-                </div>
+                </a>
             </div>
-            <div class="flex gap-x-5 bg-transparent bg-blue-500">
-                <button type="button" class="flex pl-6 pr-4 py-[18px]">
-                    <p class="text-base leading-[120%] -tracking-[0.02rem] max-w-[102px]">All Category</p>
+            <div class="flex items-center justify-items-center col-span-4 gap-x-5 pr-6 bg-transparent h-full border border-[#373737] rounded-lg bg-blue-500">
+                <button type="button" class="flex justify-center gap-2 pl-6 pr-4 py-[18px] w-[25%] h-full">
+                    <p class="text-base leading-[120%] -tracking-[0.02rem]">All Category</p>
                     <div class="grid place-content-center w-5 h-5">
-                        <img src="files/svg/arrow_down.svg" alt="icon arrow_down">
+                        <img src="files/svg/arrow_down.svg" alt="icon arrow_down" class="w-full h-full object-cover">
                     </div>
                 </button>
-                <div class="relative flex items-center content-center">
-                    <input type="text" class="text-base leading-[120%] -tracking-[0.02rem] max-w-[216px] bg-transparent border-transparent px-4 w-full" placeholder="Search fitness equipment" >
-                    <div>
-                        <img src="files/svg/Search.svg" alt="icon_search">
-                    </div>
-                </div>
+                <div class="w-[1px] h-[50%] bg-white/20"></div>
+                <label class="relative flex items-center content-center w-[75%] h-full cursor-text">
+                    <input type="text" class="text-base leading-[120%] -tracking-[0.02rem] bg-transparent outline-none px-4 w-full" placeholder="Search fitness equipment" >
+                    <button type="button" class="grid place-content-center">
+                        <img src="files/svg/Search.svg" alt="icon_search" class="w-full h-full object-cover">
+                    </button>
+                </label>
             </div>
-            <div class="flex gap-x-10 bg-red-500">
-                <button type="button">
+            <div class="flex items-center content-center justify-end col-span-1 gap-x-10 h-full">
+                <button type="button" class="grid place-content-center w-6 h-6">
                     <img src="files/svg/keranjang.svg" alt="icon_keranjang" class="w-full h-full object-cover">
                 </button>
                 <button type="button" class="flex gap-x-4">
-                    <div>
+                    <div class="grid place-content-center w-5 h-5">
                         <img src="files/svg/user.svg" alt="icon_user" class="w-full h-full object-cover">
                     </div>
-                    <p class="text-base leading-[120%] -tracking-[0.02rem]">Sign In</p>
-                    
+                    <p class="text-base leading-[120%] -tracking-[0.02rem]">Sign In</p>   
                 </button>
             </div>
         </nav>
     </header>
 
-    <section id="1" class="grid pt-[18px] px-[105px] bg-[#1E1E1E]">
-        <div class="grid py-[82px] px-[100px] bg-[#7D7D7D]">
-            <h2 class="text-xs font-extrabold leading-[120%] -tracking-[] max-w-[191px]">Fitness Equipment</h2>
-            <h1 class="text-[90px] font-bold leading-[120%] -tracking-[0.1125rem] max-w-[845px] text-white">Magnus X7 Functional Trainer</h1>
-            <p class="text-base font-medium -tracking-[0.005rem] max-w-[323px] text-[#C4C4C4]">Preorder Magnus X7 FUnctional Trainer</p>
-            <div class="flex gap-2">
-                <button type="button" class="py-5 px-10 border rounded border-hidden bg-[#DB3539] text-white">Learn More</button>
-                <button type="button" class="py-5 px-10 border rounded text-white">Buy</button>
+    <section id="section1" class="grid pt-[18px] px-[105px]">
+        <div class="relative grid py-[82px] px-[100px] bg-[#202020]">
+            <div class="grid z-10">
+                <h2 class="mb-2 text-xs font-extrabold leading-[120%] tracking-[0.22499999999999998rem] max-w-[191px] text-[#DB6735]">Fitness Equipment</h2>
+                <h1 class="mb-4 text-[90px] font-bold leading-[120%] -tracking-[0.1125rem] max-w-[845px] text-white">Magnus X7 Functional Trainer</h1>
+                <p class="mb-10 text-base font-medium -tracking-[0.005rem] max-w-[323px] text-[#C4C4C4]">Preorder Magnus X7 FUnctional Trainer</p>
+                <div class="flex gap-2">
+                    <button type="button" class="py-5 px-10 border rounded border-hidden bg-[#DB3539] text-white">Learn More</button>
+                    <button type="button" class="py-5 px-10 border rounded text-white">Buy</button>
+                </div>
+            </div>
+            <div class="absolute grid w-full h-full">
+                <img src="files/img/fotos1_mas2berotot.webp" alt="mas2berotot" class="w-full h-full object-cover object-top">
             </div>
         </div>
+    </section>
+
+    <section id="section2" class="mt-[30px] px-[105px]">
+        <div class="grid grid-cols-4 gap-x-[30px] content-start items-start">
+            <div class="grid content-start items-start p-[30px] pb-8 gap-y-5 h-full bg-[#1F2326]">
+                <div class="grid justify-start">
+                    <div class="flex items-center content-center justify-center p-5 border rounded border-hidden w-[70px] h-[70px] bg-[#4C4E4E]">
+                        <img src="files/svg/icon_pricetag.svg" alt="icon_pricetag" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="grid gap-y-[11px]">
+                    <h1 class="text-xl font-bold">Best Price Guarantee</h1>
+                    <p class="text-base font-medium leading-[180%]">If you find lower price, we’ll match it. </p>
+                </div>
+            </div>
+            <div class="grid content-start items-start p-[30px] pb-8 gap-y-5 h-full bg-[#1F2326]">
+                <div class="grid justify-start">
+                    <div class="flex items-center content-center justify-center p-5 border rounded border-hidden w-[70px] h-[70px] bg-[#4C4E4E]">
+                        <img src="files/svg/icon_barbell.svg" alt="icon_barbell" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <h1 class="text-xl font-bold">Free One-Hour Pickup</h1>
+                <p class="text-base font-medium leading-[180%]">If you find lower price, we’ll match it. </p>
+            </div>
+            <div class="grid content-start items-start p-[30px] pb-8 gap-y-5 h-full bg-[#1F2326]">
+                <div class="grid justify-start">
+                    <div class="flex items-center content-center justify-center p-5 border rounded border-hidden w-[70px] h-[70px] bg-[#4C4E4E]">
+                        <img src="files/svg/icon_truck.svg" alt="icon_truckbox" class="w-[30px] h-[30px]">
+                    </div>
+                </div>
+                <h1 class="text-xl font-bold">Free Shipping</h1>
+                <p class="text-base font-medium leading-[180%]">If you find lower price, we’ll match it. </p>
+            </div>
+            <div class="grid content-start items-start p-[30px] pb-8 gap-y-5 h-full bg-[#1F2326]">
+                <div class="grid justify-start">
+                    <div class="flex items-center content-center justify-center p-5 border rounded border-hidden w-[70px] h-[70px] bg-[#4C4E4E]">
+                        <img src="files/svg/icon_pricetag.svg" alt="icon_pricetag" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <h1 class="text-xl font-bold">Help Save Youth Sports</h1>
+                <p class="text-base font-medium leading-[180%]">If you find lower price, we’ll match it. </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="section3" class="flex justify-center content-center my-[150px] gap-x-[38px]">
+        <div>
+            <img src="files/svg/icon_muscle_fitness.svg" alt="icon_muscle_fitness">
+        </div>
+        <div>
+            <img src="files/svg/icon_fitness.svg" alt="icon_fitness">
+        </div>
+        <div>
+            <img src="files/svg/icon_lafitness.svg" alt="icon_lafitness">
+        </div>
+        <div>
+            <img src="files/svg/icon_schwinn.svg" alt="icon_schwinn">
+        </div>
+    </section>
+
+    <section id="section4">
+        <div>
+            <div class="grid justify-center content-center text-center">
+                <div class="grid justify-center text-center">
+                    <h2 class="mx-auto mb-6 text-xs font-extrabold leading-[120%] tracking-[0.22499999999999998rem] text-[#DB6735]">Hot Collection</h2>
+                    <h1 class="mx-auto mb-8 text-[56px] font-bold leading-[120%] -tracking-[0.07rem] max-w-[928px]">Pilih sesuai dengan budget, dan langsung miliki sebuah home gym di rumah Anda.</h1>
+                    <p class="mx-auto text-base font-medium leading-[180%] tracking-[0.005rem] max-w-[770px] text-[#C4C4C4]">Lengkapi mesin Power Rack dengan alat pendukung tambahan dan temukan berbagai variasi latihan. <span class="font-bold">Satu alat, melengkapi semua kebutuhan latihan.</span></p>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 items-center mt-[100px] px-[102px]">
+                <div class="grid gap-y-8">
+                    <img src="files/img/fotos4_alat1.webp" alt="fotos4_alat1">
+                    <div class="grid items-center justify-center text-center">
+                        <div class="grid py-2 pb-2 px-[17px] mx-auto border rounded border-hidden bg-[#271B16]">
+                            <p class="text-xs font-medium leading-[120%] tracking-[0.005rem] text-[#DB6735]">New Product</p>
+                        </div>
+                        <h4 class="pb-4 text-[32px] font-bold leading-[120%] -tracking-[0.04rem]">XTrainer Series</h4>
+                        <h3 class="pb-8 text-sm font-medium text-[#C4C4C4]">Preorder Magnus X7 FUnctional Trainer</h3>
+                        <div class="flex justify-center gap-x-2">
+                            <a href="/" class="text-base font-bold text-[#DB3539]">Learn More</a>
+                            <a href="/" class="text-base font-bold text-[#DB3539]">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid gap-y-8">
+                    <img src="files/img/fotos4_alat2.webp" alt="fotos4_alat2">
+                    <div class="grid items-center justify-center text-center">
+                        <div class="grid py-2 pb-2 px-[17px] mx-auto border rounded border-hidden bg-[#271B16]">
+                            <p class="text-xs font-medium leading-[120%] tracking-[0.005rem] text-[#DB6735]">New Product</p>
+                        </div>
+                        <h4 class="pb-4 text-[32px] font-bold leading-[120%] -tracking-[0.04rem]">Home Gym</h4>
+                        <h3 class="pb-8 text-sm font-medium text-[#C4C4C4]">Preorder Magnus X7 FUnctional Trainer</h3>
+                        <div class="flex justify-center gap-x-2">
+                            <a href="/" class="text-base font-bold text-[#DB3539]">Learn More</a>
+                            <a href="/" class="text-base font-bold text-[#DB3539]">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid gap-y-8">
+                    <img src="files/img/fotos4_alat3.webp" alt="fotos4_alat3">
+                    <div class="grid items-center justify-center text-center">
+                        <div class="grid py-2 pb-2 px-[17px] mx-auto border rounded border-hidden bg-[#271B16]">
+                            <p class="text-xs font-medium leading-[120%] tracking-[0.005rem] text-[#DB6735]">New Product</p>
+                        </div>
+                        <h4 class="pb-4 text-[32px] font-bold leading-[120%] -tracking-[0.04rem]">Squat Stand</h4>
+                        <h3 class="pb-8 text-sm font-medium text-[#C4C4C4]">Preorder Magnus X7 FUnctional Trainer</h3>
+                        <div class="flex justify-center gap-x-2">
+                            <a href="/" class="text-base font-bold text-[#DB3539]">Learn More</a>
+                            <a href="/" class="text-base font-bold text-[#DB3539]">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section5" class="grid grid-cols-2 gap-5 mt-[200px] px-5">
+        <div class="grid place-content-center px-[90px] py-[90px]">
+            <div>
+                <h2 class="mb-6 text-xs font-extrabold leading-[120%] tracking[0.22499999999999998rem] text-[#DB6735]">POPULAR COLLECTION</h2>
+                <h1 class="text-[56px] font-bold leading-[120%] -tracking-[0.07rem] max-w-[504px]">Semakin lengkap <br> Semakin bagus</h1>
+                <p class="my-8 text-base font-medium leading-[180%] -tracking-[0.005rem] max-w-[495px] text-[#C4C4C4]">Inilah janji kami kepada Anda, para pelanggan setia kami, dan alasan mengapa harus memilih <span class="text-[#DB3539]">GYMFITNESSINDO</span> untuk memenuhi kebutuhan home gym Anda.</p>
+                <div class="flex justify-start">
+                    <button type="button" class="grid place-content-center py-5 px-10 border rounded border-hidden bg-[#DB3539]">Explore More</button>
+                </div>
+            </div>
+        </div>
+        <div class="grid justify-center items-center py-[38px] px-[102px] bg-[#222024]">
+            <img src="files/img/foto1_s5.webp" alt="fotos5_alat1" class="w-full h-full object-cover">
+        </div>
+        <div class="grid justify-center items-center py-[38px] px-[102px] bg-[#222024]">
+            <img src="files/img/foto2_s5.webp" alt="fotos5_alat2" class="w-full h-full object-cover">
+        </div>
+        <div class="grid justify-center items-center py-[38px] px-[102px] bg-[#222024]">
+            <img src="files/img/foto3_s5.webp" alt="fotos5_alat3" class="w-full h-full object-cover">
+        </div>
+    </section>
+
+    <section id="section6">
+
     </section>
 
     <script>
