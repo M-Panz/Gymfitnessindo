@@ -353,8 +353,8 @@
         <div class="relative grid px-[105px]">
             <div class="grid mt-[100px] overflow-hidden">
                 <div id="carousel-slide2" class="flex flex-nowrap items-center gap-x-[30px] transition duration-300">
-                    <div class="grid grid-cols-3 flex-none gap-x-[30px] w-full max-w-[calc(100vw-210px)] bg-green-400">
-                        <div class="grid content-start carousel-content2">
+                    <div class="grid grid-cols-3 flex-none gap-x-[30px] w-full max-w-[calc(100vw-210px)]">
+                        <div class="grid content-start carousel-content2 h-full">
                             <div class="grid">
                                 <img src="files/img/foto1_s7.webp" alt="foto1_s7" class="w-full h-full object-cover">
                             </div>            
@@ -412,7 +412,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid grid-cols-3 flex-none gap-[30px] mt-[100px] w-full max-w-[calc(100vw-210px)] bg-red-500">
+                    <div class="grid grid-cols-3 flex-none gap-[30px] w-full max-w-[calc(100vw-210px)]">
                         <div class="grid content-start carousel-content2">
                             <div class="grid">
                                 <img src="files/img/foto1_s7.webp" alt="foto1_s7" class="w-full h-full object-cover">
@@ -609,11 +609,11 @@
 
     <script>
         const carouselSlide = document.getElementById("carousel-slide");
-        const viewportWidth = window.innerWidth;
         const carouselCount = 2;
-        let carouselSize = viewportWidth - 210;
         let currentCarousel = 0;
         function nextCarousel() {
+            const viewportWidth = window.innerWidth;
+            let carouselSize = viewportWidth - 210;
             if(currentCarousel<carouselCount){
                 currentCarousel += 1;           
             }else{
@@ -623,6 +623,8 @@
             console.log(currentCarousel);
         }
         function prevCarousel() {
+            const viewportWidth = window.innerWidth;
+            let carouselSize = viewportWidth - 210;
             if(currentCarousel <= 0){
                 currentCarousel = carouselCount;
             }else{
@@ -638,30 +640,36 @@
     <script>
         const carouselSlide2 = document.getElementById("carousel-slide2");
         const carouselContent2 = document.querySelectorAll(".carousel-content2");
-        const carouselContent2Width = document.querySelector(".carousel-content2").offsetWidth;
-        const carouselCount2 = carouselContent2.length;
-        let carouselSize2 = carouselContent2Width;
+        const carouselCount2 = carouselContent2.length - 3;
         let currentCarousel2 = 0;
         function nextCarousel2() {
+            const carouselContent2Width = document.querySelector(".carousel-content2").offsetWidth;
+            let carouselSize2 = carouselContent2Width;
             if(currentCarousel2<carouselCount2){
                 currentCarousel2 += 1;           
             }else{
                 currentCarousel2 = 0;
             }
-            carouselSlide2.style.transform = 'translateX(' + (-carouselContent2Width * currentCarousel2) + 'px)';
-            console.log(currentCarousel2);
+            carouselSlide2.style.transform = 'translateX(' + ((-carouselContent2Width * currentCarousel2) - (30 * currentCarousel2)) + 'px)';
+            console.log(((-carouselContent2Width * currentCarousel2) - (30 * currentCarousel2)));
         }
         function prevCarousel2() {
+            const carouselContent2Width = document.querySelector(".carousel-content2").offsetWidth;
+            let carouselSize2 = carouselContent2Width;
             if(currentCarousel2 <= 0){
                 currentCarousel2 = carouselCount2;
             }else{
                 currentCarousel2 -= 1;
             }
-            carouselSlide2.style.transform = 'translateX(' + (-carouselContent2Width * currentCarousel2) + 'px)';
-            console.log(currentCarousel2);
+            carouselSlide2.style.transform = 'translateX(' + ((-carouselContent2Width * currentCarousel2) - (30 * currentCarousel2)) + 'px)';
+            console.log(((-carouselContent2Width * currentCarousel2) - (30 * currentCarousel2)));
         }
         document.getElementById("btn-left2").addEventListener("click",prevCarousel2);
         document.getElementById("btn-right2").addEventListener("click",nextCarousel2);
+        window.addEventListener('resize', () => {
+            const carouselContent2Width = document.querySelector(".carousel-content2").offsetWidth;
+            let carouselSize2 = carouselContent2Width;
+        });
     </script>
 
 
