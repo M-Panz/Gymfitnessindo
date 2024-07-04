@@ -586,8 +586,28 @@ video {
   right: 70px;
 }
 
+.left-\[30px\] {
+  left: 30px;
+}
+
+.right-\[30px\] {
+  right: 30px;
+}
+
+.left-\[0px\] {
+  left: 0px;
+}
+
+.right-\[0px\] {
+  right: 0px;
+}
+
 .z-10 {
   z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .col-span-1 {
@@ -1134,6 +1154,11 @@ video {
 .bg-purple-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(168 85 247 / var(--tw-bg-opacity));
+}
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
 .object-cover {

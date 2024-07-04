@@ -50,10 +50,10 @@
         </nav>
     </header>
 
-    <section id="section1" class="relative grid pt-[18px] px-[105px] bg-green-500/20">
+    <section id="section1" class="relative grid pt-[18px] px-[105px]">
         <div class="grid overflow-hidden">
-            <div id="carousel-slide" class="relative flex flex-nowrap transition duration-300 bg-purple-500">
-                <div class="relative grid flex-none py-[82px] px-[100px] w-full max-w-[calc(100vw-210px)] h-full bg-[#864343]">
+            <div id="carousel-slide" class="relative flex flex-nowrap transition duration-300">
+                <div class="relative grid flex-none py-[82px] px-[100px] w-full max-w-[calc(100vw-210px)] h-full">
                     <div class="grid z-10">
                         <h2 class="mb-2 text-xs font-extrabold leading-[120%] tracking-[0.22499999999999998rem] max-w-[191px] text-[#DB6735]">Fitness Equipment</h2>
                         <h1 class="mb-4 text-[90px] font-bold leading-[120%] -tracking-[0.1125rem] max-w-[845px] text-white">Magnus X7 Functional Trainer</h1>
@@ -67,7 +67,7 @@
                         <img src="files/img/fotos1_mas2berotot.webp" alt="mas2berotot" class="w-full h-full object-cover object-top">
                     </div>
                 </div>
-                <div class="relative grid flex-none py-[82px] px-[100px] w-full max-w-[calc(100vw-210px)] h-full bg-[#a83434]">
+                <div class="relative grid flex-none py-[82px] px-[100px] w-full max-w-[calc(100vw-210px)] h-full">
                     <div class="grid z-10">
                         <h2 class="mb-2 text-xs font-extrabold leading-[120%] tracking-[0.22499999999999998rem] max-w-[191px] text-[#DB6735]">Fitness Equipment</h2>
                         <h1 class="mb-4 text-[90px] font-bold leading-[120%] -tracking-[0.1125rem] max-w-[845px] text-white">Magnus X7 Functional Trainer</h1>
@@ -81,7 +81,7 @@
                         <img src="files/img/fotos1_mas2berotot.webp" alt="mas2berotot" class="w-full h-full object-cover object-top">
                     </div>
                 </div>
-                <div class="relative grid flex-none py-[82px] px-[100px] w-full max-w-[calc(100vw-210px)] h-full bg-[#c37676]">
+                <div class="relative grid flex-none py-[82px] px-[100px] w-full max-w-[calc(100vw-210px)] h-full">
                     <div class="grid z-10">
                         <h2 class="mb-2 text-xs font-extrabold leading-[120%] tracking-[0.22499999999999998rem] max-w-[191px] text-[#DB6735]">Fitness Equipment</h2>
                         <h1 class="mb-4 text-[90px] font-bold leading-[120%] -tracking-[0.1125rem] max-w-[845px] text-white">Magnus X7 Functional Trainer</h1>
@@ -97,12 +97,12 @@
                 </div>
             </div>
         </div>
-        <label class="absolute left-[70px] top-1/2 grid place-content-center bg-white/20 w-[70px] h-[70px] border-hidden rounded-full cursor-pointer">
+        <label class="absolute left-[70px] top-1/2 grid place-content-center bg-white/20 w-[70px] h-[70px] border-hidden rounded-full cursor-pointer z-20">
             <button id="btn-left" type="button" class="w-full h-full">
                 <img src="files/svg/icons_arrow_left-1.svg" alt="icon_panah_kiri">
             </button>
         </label>
-        <label class="absolute grid right-[70px] top-1/2 place-content-center bg-white/20 w-[70px] h-[70px] border-hidden rounded-full cursor-pointer">
+        <label class="absolute grid right-[70px] top-1/2 place-content-center bg-white/20 w-[70px] h-[70px] border-hidden rounded-full cursor-pointer z-20">
             <button id="btn-right" type="button" class="w-full h-full">
                 <img src="files/svg/icons_arrow_right-2.svg" alt="icon_panah_kanan">
             </button>
@@ -345,77 +345,144 @@
         </div>
     </section>
 
-    <section id="section7" class="grid mt-[200px] px-[105px]">
-        <div>
-            <div class="grid justify-center items-center content-center text-center gap-y-6">
-                <h2 class="text-xs font-extrabold leading-[120%] tracking-[0.22499999999999998rem] text-[#DB6735]">THE BLOG</h2>
-                <h1 class="text-[56px] font-bold leading-[120%] -tracking-[0.07rem] max-w-[880px]">Kumpulan artikel fitness, kebugaran, dan tips.</h1>
+    <section id="section7" class="grid mt-[200px]">
+        <div class="grid justify-center items-center content-center text-center gap-y-6 px-[105px]">
+            <h2 class="text-xs font-extrabold leading-[120%] tracking-[0.22499999999999998rem] text-[#DB6735]">THE BLOG</h2>
+            <h1 class="text-[56px] font-bold leading-[120%] -tracking-[0.07rem] max-w-[880px]">Kumpulan artikel fitness, kebugaran, dan tips.</h1>
+        </div>
+        <div class="relative grid px-[105px]">
+            <div class="grid mt-[100px] overflow-hidden">
+                <div id="carousel-slide2" class="flex flex-nowrap items-center gap-x-[30px] transition duration-300">
+                    <div class="grid grid-cols-3 flex-none gap-x-[30px] w-full max-w-[calc(100vw-210px)] bg-green-400">
+                        <div class="grid content-start carousel-content2">
+                            <div class="grid">
+                                <img src="files/img/foto1_s7.webp" alt="foto1_s7" class="w-full h-full object-cover">
+                            </div>            
+                            <div class="grid content-between p-[30px] pt-6 bg-[#1F1F1F]">
+                                <div class="grid justify-start gap-y-2 mb-10">
+                                    <div class="flex">
+                                        <h4 class="grid px-4 py-2 text-xs font-bold leading-[120%] border rounded border-hidden text-[#DB6735] bg-[#322621]">Lorem Ipsum</h4>
+                                    </div>
+                                    <h3 class="text-2xl font-medium leading-[180%] -tracking-[0.03rem] max-w-[310px]">Lorem ipsum dolor sit amet, consectetur.</h3>
+                                </div>
+                                <div class="flex items-center gap-x-2">
+                                    <a href="/" class="text-base font-bold text-[#DB3539]">Learn More</a>
+                                    <div>
+                                        <img src="files/svg/arrow_right.svg" alt="arrow_right_s6" class="w-full h-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid content-start carousel-content2">
+                            <div class="grid">
+                                <img src="files/img/foto2_s7.webp" alt="foto2_s7" class="w-full h-full object-cover">
+                            </div>            
+                            <div class="grid content-between p-[30px] pt-6 bg-[#1F1F1F]">
+                                <div class="grid justify-start gap-y-2 mb-10">
+                                    <div class="flex">
+                                        <h4 class="grid px-4 py-2 text-xs font-bold leading-[120%] border rounded border-hidden text-[#DB6735] bg-[#322621]">Lorem Ipsum</h4>
+                                    </div>
+                                    <h3 class="text-2xl font-medium leading-[180%] -tracking-[0.03rem] max-w-[332px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+                                </div>
+                                <div class="flex items-center gap-x-2">
+                                    <a href="/" class="text-base font-bold text-[#DB3539]">Learn More</a>
+                                    <div>
+                                        <img src="files/svg/arrow_right.svg" alt="arrow_right_s6" class="w-full h-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid content-start carousel-content2">
+                            <div class="grid">
+                                <img src="files/img/foto3_s7.webp" alt="foto3_s7" class="w-full h-full object-cover">
+                            </div>            
+                            <div class="grid content-between p-[30px] pt-6 bg-[#1F1F1F]">
+                                <div class="grid justify-start gap-y-2 mb-10">
+                                    <div class="flex">
+                                        <h4 class="grid px-4 py-2 text-xs font-bold leading-[120%] border rounded border-hidden text-[#DB6735] bg-[#322621]">Lorem Ipsum</h4>
+                                    </div>
+                                    <h3 class="text-2xl font-medium leading-[180%] -tracking-[0.03rem] max-w-[310px]">Lorem ipsum dolor sit amet, consectetur.</h3>
+                                </div>
+                                <div class="flex items-center gap-x-2">
+                                    <a href="/" class="text-base font-bold text-[#DB3539]">Learn More</a>
+                                    <div>
+                                        <img src="files/svg/arrow_right.svg" alt="arrow_right_s6" class="w-full h-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 flex-none gap-[30px] mt-[100px] w-full max-w-[calc(100vw-210px)] bg-red-500">
+                        <div class="grid content-start carousel-content2">
+                            <div class="grid">
+                                <img src="files/img/foto1_s7.webp" alt="foto1_s7" class="w-full h-full object-cover">
+                            </div>            
+                            <div class="grid content-between p-[30px] pt-6 bg-[#1F1F1F]">
+                                <div class="grid justify-start gap-y-2 mb-10">
+                                    <div class="flex">
+                                        <h4 class="grid px-4 py-2 text-xs font-bold leading-[120%] border rounded border-hidden text-[#DB6735] bg-[#322621]">Lorem Ipsum</h4>
+                                    </div>
+                                    <h3 class="text-2xl font-medium leading-[180%] -tracking-[0.03rem] max-w-[310px]">Lorem ipsum dolor sit amet, consectetur.</h3>
+                                </div>
+                                <div class="flex items-center gap-x-2">
+                                    <a href="/" class="text-base font-bold text-[#DB3539]">Learn More</a>
+                                    <div>
+                                        <img src="files/svg/arrow_right.svg" alt="arrow_right_s6" class="w-full h-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid content-start carousel-content2">
+                            <div class="grid">
+                                <img src="files/img/foto2_s7.webp" alt="foto2_s7" class="w-full h-full object-cover">
+                            </div>            
+                            <div class="grid content-between p-[30px] pt-6 bg-[#1F1F1F]">
+                                <div class="grid justify-start gap-y-2 mb-10">
+                                    <div class="flex">
+                                        <h4 class="grid px-4 py-2 text-xs font-bold leading-[120%] border rounded border-hidden text-[#DB6735] bg-[#322621]">Lorem Ipsum</h4>
+                                    </div>
+                                    <h3 class="text-2xl font-medium leading-[180%] -tracking-[0.03rem] max-w-[332px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+                                </div>
+                                <div class="flex items-center gap-x-2">
+                                    <a href="/" class="text-base font-bold text-[#DB3539]">Learn More</a>
+                                    <div>
+                                        <img src="files/svg/arrow_right.svg" alt="arrow_right_s6" class="w-full h-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid content-start carousel-content2">
+                            <div class="grid">
+                                <img src="files/img/foto3_s7.webp" alt="foto3_s7" class="w-full h-full object-cover">
+                            </div>            
+                            <div class="grid content-between p-[30px] pt-6 bg-[#1F1F1F]">
+                                <div class="grid justify-start gap-y-2 mb-10">
+                                    <div class="flex">
+                                        <h4 class="grid px-4 py-2 text-xs font-bold leading-[120%] border rounded border-hidden text-[#DB6735] bg-[#322621]">Lorem Ipsum</h4>
+                                    </div>
+                                    <h3 class="text-2xl font-medium leading-[180%] -tracking-[0.03rem] max-w-[310px]">Lorem ipsum dolor sit amet, consectetur.</h3>
+                                </div>
+                                <div class="flex items-center gap-x-2">
+                                    <a href="/" class="text-base font-bold text-[#DB3539]">Learn More</a>
+                                    <div>
+                                        <img src="files/svg/arrow_right.svg" alt="arrow_right_s6" class="w-full h-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="grid grid-cols-3 gap-[30px] mt-[100px]">
-                <div class="grid content-start">
-                    <div>
-                        <div class="grid">
-                            <img src="files/img/foto1_s7.webp" alt="foto1_s7" class="w-full h-full object-cover">
-                        </div>            
-                    </div>
-                    <div class="grid content-between p-[30px] pt-6 bg-[#1F1F1F]">
-                        <div class="grid justify-start gap-y-2 mb-10">
-                            <div class="flex">
-                                <h4 class="grid px-4 py-2 text-xs font-bold leading-[120%] border rounded border-hidden text-[#DB6735] bg-[#322621]">Lorem Ipsum</h4>
-                            </div>
-                            <h3 class="text-2xl font-medium leading-[180%] -tracking-[0.03rem] max-w-[310px]">Lorem ipsum dolor sit amet, consectetur.</h3>
-                        </div>
-                        <div class="flex items-center gap-x-2">
-                            <a href="/" class="text-base font-bold text-[#DB3539]">Learn More</a>
-                            <div>
-                                <img src="files/svg/arrow_right.svg" alt="arrow_right_s6" class="w-full h-full">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid content-start">
-                    <div>
-                        <div class="grid">
-                            <img src="files/img/foto2_s7.webp" alt="foto2_s7" class="w-full h-full object-cover">
-                        </div>            
-                    </div>
-                    <div class="grid content-between p-[30px] pt-6 bg-[#1F1F1F]">
-                        <div class="grid justify-start gap-y-2 mb-10">
-                            <div class="flex">
-                                <h4 class="grid px-4 py-2 text-xs font-bold leading-[120%] border rounded border-hidden text-[#DB6735] bg-[#322621]">Lorem Ipsum</h4>
-                            </div>
-                            <h3 class="text-2xl font-medium leading-[180%] -tracking-[0.03rem] max-w-[332px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
-                        </div>
-                        <div class="flex items-center gap-x-2">
-                            <a href="/" class="text-base font-bold text-[#DB3539]">Learn More</a>
-                            <div>
-                                <img src="files/svg/arrow_right.svg" alt="arrow_right_s6" class="w-full h-full">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid content-start">
-                    <div>
-                        <div class="grid">
-                            <img src="files/img/foto3_s7.webp" alt="foto3_s7" class="w-full h-full object-cover">
-                        </div>            
-                    </div>
-                    <div class="grid content-between p-[30px] pt-6 bg-[#1F1F1F]">
-                        <div class="grid justify-start gap-y-2 mb-10">
-                            <div class="flex">
-                                <h4 class="grid px-4 py-2 text-xs font-bold leading-[120%] border rounded border-hidden text-[#DB6735] bg-[#322621]">Lorem Ipsum</h4>
-                            </div>
-                            <h3 class="text-2xl font-medium leading-[180%] -tracking-[0.03rem] max-w-[310px]">Lorem ipsum dolor sit amet, consectetur.</h3>
-                        </div>
-                        <div class="flex items-center gap-x-2">
-                            <a href="/" class="text-base font-bold text-[#DB3539]">Learn More</a>
-                            <div>
-                                <img src="files/svg/arrow_right.svg" alt="arrow_right_s6" class="w-full h-full">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <label class="absolute left-[70px] top-1/2 grid place-content-center bg-white/20 w-[70px] h-[70px] border-hidden rounded-full cursor-pointer z-20">
+                <button id="btn-left2" type="button" class="w-full h-full">
+                    <img src="files/svg/icons_arrow_left-1.svg" alt="icon_panah_kiri">
+                </button>
+            </label>
+            <label class="absolute grid right-[70px] top-1/2 place-content-center bg-white/20 w-[70px] h-[70px] border-hidden rounded-full cursor-pointer z-20">
+                <button id="btn-right2" type="button" class="w-full h-full">
+                    <img src="files/svg/icons_arrow_right-2.svg" alt="icon_panah_kanan">
+                </button>
+            </label>
         </div>
     </section>
 
@@ -552,8 +619,8 @@
             }else{
                 currentCarousel = 0;
             }
-            carouselSlide.style.transform = 'translateX(' + (carouselSize * currentCarousel) + 'px))';
-            console.log(carouselSize * currentCarousel);
+            carouselSlide.style.transform = 'translateX(' + (-carouselSize * currentCarousel) + 'px)';
+            console.log(currentCarousel);
         }
         function prevCarousel() {
             if(currentCarousel <= 0){
@@ -561,11 +628,40 @@
             }else{
                 currentCarousel -= 1;
             }
+            carouselSlide.style.transform = 'translateX(' + (-carouselSize * currentCarousel) + 'px)';
             console.log(currentCarousel);
         }
         document.getElementById("btn-left").addEventListener("click",prevCarousel);
-        document.getElementById("btn-right").addEventListener("click",nextCarousel);
-        
+        document.getElementById("btn-right").addEventListener("click",nextCarousel);  
+    </script>
+
+    <script>
+        const carouselSlide2 = document.getElementById("carousel-slide2");
+        const carouselContent2 = document.querySelectorAll(".carousel-content2");
+        const carouselContent2Width = document.querySelector(".carousel-content2").offsetWidth;
+        const carouselCount2 = carouselContent2.length;
+        let carouselSize2 = carouselContent2Width;
+        let currentCarousel2 = 0;
+        function nextCarousel2() {
+            if(currentCarousel2<carouselCount2){
+                currentCarousel2 += 1;           
+            }else{
+                currentCarousel2 = 0;
+            }
+            carouselSlide2.style.transform = 'translateX(' + (-carouselContent2Width * currentCarousel2) + 'px)';
+            console.log(currentCarousel2);
+        }
+        function prevCarousel2() {
+            if(currentCarousel2 <= 0){
+                currentCarousel2 = carouselCount2;
+            }else{
+                currentCarousel2 -= 1;
+            }
+            carouselSlide2.style.transform = 'translateX(' + (-carouselContent2Width * currentCarousel2) + 'px)';
+            console.log(currentCarousel2);
+        }
+        document.getElementById("btn-left2").addEventListener("click",prevCarousel2);
+        document.getElementById("btn-right2").addEventListener("click",nextCarousel2);
     </script>
 
 
