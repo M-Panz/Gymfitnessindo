@@ -50,22 +50,65 @@
         </nav>
     </header>
 
-    <section id="section1" class="grid pt-[18px] px-[105px]">
-        <div class="relative grid py-[82px] px-[100px] bg-[#202020]">
-            <div class="grid z-10">
-                <h2 class="mb-2 text-xs font-extrabold leading-[120%] tracking-[0.22499999999999998rem] max-w-[191px] text-[#DB6735]">Fitness Equipment</h2>
-                <h1 class="mb-4 text-[90px] font-bold leading-[120%] -tracking-[0.1125rem] max-w-[845px] text-white">Magnus X7 Functional Trainer</h1>
-                <p class="mb-10 text-base font-medium -tracking-[0.005rem] max-w-[323px] text-[#C4C4C4]">Preorder Magnus X7 FUnctional Trainer</p>
-                <div class="flex gap-2">
-                    <button type="button" class="py-5 px-10 border rounded border-hidden bg-[#DB3539] text-white">Learn More</button>
-                    <button type="button" class="py-5 px-10 border rounded text-white">Buy</button>
+    <section id="section1" class="relative grid pt-[18px] px-[105px] bg-green-500/20">
+        <div class="grid overflow-hidden">
+            <div id="carousel-slide" class="relative flex flex-nowrap transition duration-300 bg-purple-500">
+                <div class="relative grid flex-none py-[82px] px-[100px] w-full max-w-[calc(100vw-210px)] h-full bg-[#864343]">
+                    <div class="grid z-10">
+                        <h2 class="mb-2 text-xs font-extrabold leading-[120%] tracking-[0.22499999999999998rem] max-w-[191px] text-[#DB6735]">Fitness Equipment</h2>
+                        <h1 class="mb-4 text-[90px] font-bold leading-[120%] -tracking-[0.1125rem] max-w-[845px] text-white">Magnus X7 Functional Trainer</h1>
+                        <p class="mb-10 text-base font-medium -tracking-[0.005rem] max-w-[323px] text-[#C4C4C4]">Preorder Magnus X7 FUnctional Trainer</p>
+                        <div class="flex gap-2">
+                            <button type="button" class="py-5 px-10 border rounded border-hidden bg-[#DB3539] text-white">Learn More</button>
+                            <button type="button" class="py-5 px-10 border rounded text-white">Buy</button>
+                        </div>
+                    </div>
+                    <div class="absolute grid w-full h-full">
+                        <img src="files/img/fotos1_mas2berotot.webp" alt="mas2berotot" class="w-full h-full object-cover object-top">
+                    </div>
+                </div>
+                <div class="relative grid flex-none py-[82px] px-[100px] w-full max-w-[calc(100vw-210px)] h-full bg-[#a83434]">
+                    <div class="grid z-10">
+                        <h2 class="mb-2 text-xs font-extrabold leading-[120%] tracking-[0.22499999999999998rem] max-w-[191px] text-[#DB6735]">Fitness Equipment</h2>
+                        <h1 class="mb-4 text-[90px] font-bold leading-[120%] -tracking-[0.1125rem] max-w-[845px] text-white">Magnus X7 Functional Trainer</h1>
+                        <p class="mb-10 text-base font-medium -tracking-[0.005rem] max-w-[323px] text-[#C4C4C4]">Preorder Magnus X7 FUnctional Trainer</p>
+                        <div class="flex gap-2">
+                            <button type="button" class="py-5 px-10 border rounded border-hidden bg-[#DB3539] text-white">Learn More</button>
+                            <button type="button" class="py-5 px-10 border rounded text-white">Buy</button>
+                        </div>
+                    </div>
+                    <div class="absolute grid w-full h-full">
+                        <img src="files/img/fotos1_mas2berotot.webp" alt="mas2berotot" class="w-full h-full object-cover object-top">
+                    </div>
+                </div>
+                <div class="relative grid flex-none py-[82px] px-[100px] w-full max-w-[calc(100vw-210px)] h-full bg-[#c37676]">
+                    <div class="grid z-10">
+                        <h2 class="mb-2 text-xs font-extrabold leading-[120%] tracking-[0.22499999999999998rem] max-w-[191px] text-[#DB6735]">Fitness Equipment</h2>
+                        <h1 class="mb-4 text-[90px] font-bold leading-[120%] -tracking-[0.1125rem] max-w-[845px] text-white">Magnus X7 Functional Trainer</h1>
+                        <p class="mb-10 text-base font-medium -tracking-[0.005rem] max-w-[323px] text-[#C4C4C4]">Preorder Magnus X7 FUnctional Trainer</p>
+                        <div class="flex gap-2">
+                            <button type="button" class="py-5 px-10 border rounded border-hidden bg-[#DB3539] text-white">Learn More</button>
+                            <button type="button" class="py-5 px-10 border rounded text-white">Buy</button>
+                        </div>
+                    </div>
+                    <div class="absolute grid w-full h-full">
+                        <img src="files/img/fotos1_mas2berotot.webp" alt="mas2berotot" class="w-full h-full object-cover object-top">
+                    </div>
                 </div>
             </div>
-            <div class="absolute grid w-full h-full">
-                <img src="files/img/fotos1_mas2berotot.webp" alt="mas2berotot" class="w-full h-full object-cover object-top">
-            </div>
         </div>
+        <label class="absolute left-[70px] top-1/2 grid place-content-center bg-white/20 w-[70px] h-[70px] border-hidden rounded-full cursor-pointer">
+            <button id="btn-left" type="button" class="w-full h-full">
+                <img src="files/svg/icons_arrow_left-1.svg" alt="icon_panah_kiri">
+            </button>
+        </label>
+        <label class="absolute grid right-[70px] top-1/2 place-content-center bg-white/20 w-[70px] h-[70px] border-hidden rounded-full cursor-pointer">
+            <button id="btn-right" type="button" class="w-full h-full">
+                <img src="files/svg/icons_arrow_right-2.svg" alt="icon_panah_kanan">
+            </button>
+        </label>
     </section>
+
 
     <section id="section2" class="mt-[30px] px-[105px]">
         <div class="grid grid-cols-4 gap-x-[30px] content-start items-start">
@@ -496,6 +539,35 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const carouselSlide = document.getElementById("carousel-slide");
+        const viewportWidth = window.innerWidth;
+        const carouselCount = 2;
+        let carouselSize = viewportWidth - 210;
+        let currentCarousel = 0;
+        function nextCarousel() {
+            if(currentCarousel<carouselCount){
+                currentCarousel += 1;           
+            }else{
+                currentCarousel = 0;
+            }
+            carouselSlide.style.transform = 'translateX(' + (carouselSize * currentCarousel) + 'px))';
+            console.log(carouselSize * currentCarousel);
+        }
+        function prevCarousel() {
+            if(currentCarousel <= 0){
+                currentCarousel = carouselCount;
+            }else{
+                currentCarousel -= 1;
+            }
+            console.log(currentCarousel);
+        }
+        document.getElementById("btn-left").addEventListener("click",prevCarousel);
+        document.getElementById("btn-right").addEventListener("click",nextCarousel);
+        
+    </script>
+
 
     <script>
         function convertLetterSpacing(fontSizePx, letterSpacingPercent) {
