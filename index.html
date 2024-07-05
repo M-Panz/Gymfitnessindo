@@ -14,7 +14,7 @@
     <header>
         <nav class="grid grid-cols-7 items-center px-16 2xl:px-[104px] py-6 2xl:pl-[104px] 2xl:pr-[94px] bg-[#202128] text-white">
             <div class="flex col-span-5 xl:col-span-2 items-center content-center gap-x-[35px] h-full">
-                <button type="button" class="grid place-content-center w-5 h-5">
+                <button id="sidebar-button" type="button" class="grid place-content-center w-5 h-5">
                     <img src="files/svg/icon1.svg" alt="icon_burger" class="w-full h-full object-cover">
                 </button>
                 <a href="/" class="relative top-1 flex items-center content-center">
@@ -49,6 +49,24 @@
             </div>
         </nav>
     </header>
+
+    <aside id="sidebar" class="fixed top-0 left-0 grid content-start w-full h-full -translate-x-full lg:-translate-x-full z-40 transition duration-300 bg-[#131313]">
+        <div class="flex justify-between items-center px-16 py-6">
+            <a href="/" class="relative top-1 flex items-center content-center">
+                <img src="files/svg/logo_gym.svg" alt="logo_gym" class="w-full h-full object-cover">
+            </a>
+            <button id="sidebar-exit" type="button" class="grid place-content-center w-5 h-5">
+                <img src="files/svg/icon1.svg" alt="icon_burger" class="w-full h-full object-cover">
+            </button>
+        </div>
+        <nav class="grid content-start gap-y-4 px-16 py-6">
+            <a href="/">Beranda</a>
+            <a href="/">Paket</a>
+            <a href="/">Produk</a>
+            <a href="/">Cart</a>
+            <a href="/">Login/Register</a>
+        </nav>
+    </aside>
 
     <section id="section1" class="relative grid pt-[18px] px-8 lg:px-[105px]">
         <div class="grid overflow-hidden 2xl:min-h-[760px] 4xl:min-h-[900px]">
@@ -618,6 +636,17 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const sidebarBtn = document.getElementById("sidebar-button");
+        const sidebarExt = document.getElementById("sidebar-exit");
+        const sidebar = document.getElementById("sidebar");
+        function toggleSideBar() {
+            sidebar.classList.toggle("-translate-x-full");
+        }
+        sidebarBtn.addEventListener("click",toggleSideBar);
+        sidebarExt.addEventListener("click",toggleSideBar);
+    </script>
 
     <script>
         const carouselSlide = document.getElementById("carousel-slide");
